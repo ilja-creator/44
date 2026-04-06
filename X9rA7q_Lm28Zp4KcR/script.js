@@ -1,11 +1,12 @@
 const file = window.location.pathname.split("/").pop().replace(".html", "");
 
-document.getElementById("Button").addEventListener("click", () => {
+document.getElementById("Button").addEventListener("click", async () => {
     const input = document.getElementById("Input").value;
     const correctPassword = "HB-44";
 
     if (input === correctPassword) {
-        print(hint(file))
+        const message = await hint(file);
+        print(message);
     } else {
         document.body.innerHTML = "";
         document.body.style.backgroundColor = "black";
@@ -19,17 +20,14 @@ document.getElementById("Input").addEventListener("keydown", function(event) {
     }
 });
 
-function hint(file) {
-    if (file === "notice-1") {
-        return "Dort, wo das Langhalstier wohnt, wirst mit dem nächsten Hinweis du belohnt."
-    }
-    if (file === "notice-2") {
-        return "Dort, wo die Liebesschlösser am nächsten hängen, soll deien Liebe zum nächsten Tipp auch beginnen."
-    }
+async function hint(file) {
+    const response = await fetch("../texts.json");
+    const data = await response.json();
+    return data[file];
 }
 
 function print(message) {
-    const prettyName = `Notice ${file.split("-")[1]}`
+    const prettyName = `Notice ${file.split("-")[1]}`;
 
     document.body.innerHTML = `
         <h1>${prettyName}</h1>
