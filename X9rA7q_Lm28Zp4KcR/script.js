@@ -1,5 +1,10 @@
 const file = window.location.pathname.split("/").pop().replace(".html", "");
 
+(async () => {
+    const message = await hint(file);
+    document.getElementById("location").textContent = "You're at: " + message.location;
+})();
+
 document.getElementById("Button").addEventListener("click", async () => {
     const input = document.getElementById("Input").value;
     const correctPassword = "HB-44";
@@ -28,9 +33,11 @@ async function hint(file) {
 
 function print(message) {
     const prettyName = `Notice ${file.split("-")[1]}`;
-
+    console.log(message)
+    console.log(prettyName)
+    console.log(message.text)
     document.body.innerHTML = `
-        <h1>${prettyName}</h1>
-        <em>'${message}'</em>
+    <h1>${prettyName}</h1>
+    <em>'${message.hint}'</em>
     `;
 }
