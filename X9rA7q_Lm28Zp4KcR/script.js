@@ -12,6 +12,13 @@ document.getElementById("Button").addEventListener("click", () => {
     }
 });
 
+document.getElementById("Input").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        document.getElementById("Button").click();
+    }
+});
+
 function hint(file) {
     if (file === "notice-1") {
         return "Dort, wo das Langhalstier wohnt, wirst mit dem nächsten Hinweis du belohnt."
