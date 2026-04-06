@@ -6,5 +6,17 @@
   "notice-2": {
     "location": "HUTTERPARK",
     "hint": "Dort, wo die Liebesschlösser am nächsten hängen, soll's deine Liebe zum nächsten Tipp auch bringen."
+  },
+  "notice-3": {
+    "location": "HANS-PSENNER-STEG",
+    "hint": "Am Anfang vom Wald, wo ein Bankerl' dich lädt, liegt der Hinweis, mit dem's weitergeht."
+  },
+  "notice-4": {
+    "location": "HANS-ZÖBL-RUHE",
+    "hint": "Wenn's schneller geht, dann macht's mehr Spaß, also geh hinauf in Richtung Alpenzoo und merk dir das."
+  },
+  "notice-5": {
+    "location": "ABKÜRZUNG",
+    "hint": "Zum Rutschen macht's zwar nur im Winter Spaß, aber heute heute essen wir dafür da was."
   }
 }
