@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Standort prüfen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Standort wird geprüft…</h2>
+<p id="status">Bitte Standortfreigabe erlauben.</p>
+
+<button id="weiterBtn" style="display:none;" onclick="goNext()">Weiter</button>
+
+<script>
+    const allowedDistance = 50;
+
+    let nearestStation = null;
+
+    function distance(lat1, lon1, lat2, lon2) {
+        const R = 6371000;
+        const dLat = (lat2 - lat1) * Math.PI / 180;
+        const dLon = (lon2 - lon1) * Math.PI / 180;
+        const a =
+            Math.sin(dLat/2) * Math.sin(dLat/2) +
+            Math.cos(lat1 * Math.PI/180) *
+            Math.cos(lat2 * Math.PI/180) *
+            Math.sin(dLon/2) * Math.sin(dLon/2);
+        const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+        return R * c;
+    }
+
+    fetch("texts.json")
+        .then(res => res.json())
+        .then(data => {
+            startLocationCheck(data);
+        });
+
+    function startLocationCheck(stations) {
+        navigator.geolocation.getCurrentPosition(
+            (pos) => {
+                const userLat = pos.coords.latitude;
+                const userLon = pos.coords.longitude;
+
+                let bestDist = Infinity;
+
+                for (const key in stations) {
+                    const s = stations[key];
+                    const dist = distance(userLat, userLon, s.lat, s.lon);
+
+                    if (dist < bestDist) {
+                        bestDist = dist;
+                        nearestStation = s;
+                    }
+                }
+
+                if (!nearestStation) {
+                    document.getElementById("status").textContent =
+                        "Keine Station gefunden.";
+                    return;
+                }
+
+                if (bestDist <= allowedDistance) {
+                    document.getElementById("status").textContent =
+                        "Du bist bei der Station: " + nearestStation.location;
+
+                    document.getElementById("weiterBtn").style.display = "inline-block";
+                } else {
+                    document.getElementById("status").textContent =
+                        "Du bist " + Math.round(bestDist) + " m von der nächsten Station entfernt.";
+                }
+            },
+            () => {
+                document.getElementById("status").textContent =
+                    "Standort konnte nicht ermittelt werden.";
+            }
+        );
+    }
+
+    function goNext() {
+        window.location.href = nearestStation.url;
+    }
+</script>
+
+</body>
+</html>
