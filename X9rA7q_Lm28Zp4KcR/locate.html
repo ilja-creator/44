@@ -9,9 +9,9 @@
 <body>
 
 <h2>Standort wird geprüft…</h2>
-<p id="status">Bitte Standortfreigabe erlauben.</p>
+<p id="status">Bitte Standortfreigabe erlauben!</p>
 
-<button id="weiterBtn" style="display:none;" onclick="goNext()">Weiter</button>
+<button id="next" style="display:none;" onclick="goNext()">Hinweis</button>
 
 <script>
     const allowedDistance = 50;
@@ -54,8 +54,6 @@
                         bestDist = dist;
                         nearestStation = s;
                         nearestKey = key;
-                        console.log(nearestKey);
-                        console.log(window.location.href = "44/X9rA7q_Lm28Zp4KcR/html/" + nearestKey + ".html")
                     }
                 }
 
@@ -69,13 +67,13 @@
                     document.getElementById("status").textContent =
                         "Du bist bei der Station: " + nearestStation.location;
 
-                    document.getElementById("weiterBtn").style.display = "inline-block";
+                    document.getElementById("next").style.display = "inline-block";
                 } else {
                     document.getElementById("status").textContent =
                         "Du bist " + Math.round(bestDist) + " m von der nächsten Station entfernt.";
                 }
             },
-            () => {
+            () => {x
                 document.getElementById("status").textContent =
                     "Standort konnte nicht ermittelt werden.";
             }
@@ -83,7 +81,7 @@
     }
 
     function goNext() {
-        window.location.href = "44/X9rA7q_Lm28Zp4KcR/html/" + nearestKey + ".html";
+        window.location.href = "html/" + nearestKey + ".html";
     }
 </script>
 

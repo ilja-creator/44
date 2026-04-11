@@ -30,7 +30,7 @@
     "lon": 11.399147041967954
   },
   "notice-6": {
-    "location": "Spiel- & Liegewiese (Brunch)",
+    "location": "Spiel- & Liegewiese – Brunch",
     "hint": "Dort, wo auch die Stämme warten, kannst du mit dem nächsten Tipp gleich durchstarten-",
     "lat": 47.28052099784376,
     "lon": 11.399168013248396
@@ -46,5 +46,17 @@
     "hint": "Geht hinauf die langen Treppen, <b>ganz</b> oben wird euch der nächste Tipp schon retten.",
     "lat": 47.28183250162791,
     "lon": 11.400261890402076
+  },
+  "notice-9": {
+    "location": "Hungerburgbahn – Station Hungerburg",
+    "hint": "Zum Parkplatz rauf', dem Bus hinterher, bis zur Kirche bitte sehr.",
+    "lat": 47.28619124743036,
+    "lon": 11.39702300629118
+  },
+  "notice-10": {
+    "location": "Wallfahrtskirche",
+    "hint": "Weiter geht's nun im schnellen Schritt, bis zum Umbrückleralmweg am Waldrand, dort gibt's den nächsten Tipp.",
+    "lat": 47.28612688205788,
+    "lon": 11.388717098040267
   }
 }
