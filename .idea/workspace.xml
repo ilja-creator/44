@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ce1555b-c1a4-47c0-b4b2-8d3fd8ce9203" name="Changes" comment="commit changes">
-      <change afterPath="$PROJECT_DIR$/X9rA7q_Lm28Zp4KcR/locate.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/X9rA7q_Lm28Zp4KcR/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/X9rA7q_Lm28Zp4KcR/html/notice-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/X9rA7q_Lm28Zp4KcR/html/notice-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/X9rA7q_Lm28Zp4KcR/html/notice-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/X9rA7q_Lm28Zp4KcR/html/notice-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/X9rA7q_Lm28Zp4KcR/html/notice-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/X9rA7q_Lm28Zp4KcR/html/notice-3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/X9rA7q_Lm28Zp4KcR/html/notice-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/X9rA7q_Lm28Zp4KcR/html/notice-4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/X9rA7q_Lm28Zp4KcR/html/notice-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/X9rA7q_Lm28Zp4KcR/html/notice-5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/X9rA7q_Lm28Zp4KcR/locate.html" beforeDir="false" afterPath="$PROJECT_DIR$/X9rA7q_Lm28Zp4KcR/locate.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/X9rA7q_Lm28Zp4KcR/texts.json" beforeDir="false" afterPath="$PROJECT_DIR$/X9rA7q_Lm28Zp4KcR/texts.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +77,7 @@
       <option name="presentableId" value="Default" />
       <updated>1775483988217</updated>
       <workItem from="1775483989534" duration="11613000" />
-      <workItem from="1775844540106" duration="4774000" />
+      <workItem from="1775844540106" duration="6422000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <option name="closed" value="true" />
@@ -173,7 +167,15 @@
       <option name="project" value="LOCAL" />
       <updated>1775495926270</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="commit changes">
+      <option name="closed" value="true" />
+      <created>1775850717597</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1775850717597</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -16,6 +16,7 @@
     const allowedDistance = 50;
 
     let nearestStation = null;
+    let nearestKey = null;
 
     function distance(lat1, lon1, lat2, lon2) {
         const R = 6371000;
@@ -51,6 +52,7 @@
                     if (dist < bestDist) {
                         bestDist = dist;
                         nearestStation = s;
+                        nearestKey = key;
                     }
                 }
 
@@ -78,7 +80,7 @@
     }
 
     function goNext() {
-        window.location.href = nearestStation.url;
+        window.location.href = "44/X9rA7q_Lm28Zp4KcR/html/" + nearestKey + ".html";
     }
 </script>
 

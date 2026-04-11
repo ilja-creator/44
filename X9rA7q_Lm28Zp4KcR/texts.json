@@ -3,49 +3,42 @@
     "location": "HOME",
     "hint": "Dort, wo das Langhalstier wohnt, wirst mit dem nächsten Hinweis du belohnt.",
     "lat": 47.27750222947037,
-    "lon": 11.405683364728462,
-    "url": "html/notice-1.html"
+    "lon": 11.405683364728462
   },
   "notice-2": {
     "location": "HUTTERERPARK",
     "hint": "Dort, wo die Liebesschlösser am nächsten hängen, soll's deine Liebe zum nächsten Tipp auch bringen.",
     "lat": 47.27846741057058,
-    "lon": 11.401266818145807,
-    "url": "html/notice-2.html"
+    "lon": 11.401266818145807
   },
   "notice-3": {
     "location": "HANS-PSENNER-STEG",
     "hint": "Am Anfang vom Wald, wo ein Bankerl' dich lädt, liegt der Hinweis, mit dem's weitergeht.",
     "lat": 47.278360309790514,
-    "lon": 11.399679612427308,
-    "url":"html/notice-3.html"
+    "lon": 11.399679612427308
   },
   "notice-4": {
     "location": "HANS-ZÖBL-RUHE",
     "hint": "Wenn's schneller geht, dann macht's mehr Spaß, also geh hinauf in Richtung Alpenzoo und merk dir das.",
     "lat": 47.27968001589635,
-    "lon": 11.400454727786219,
-    "url": "html/notice-4.html"
+    "lon": 11.400454727786219
   },
   "notice-5": {
     "location": "ABKÜRZUNG",
     "hint": "Zum Rutschen macht's zwar nur im Winter Spaß, aber heute heute essen wir dafür da was.",
     "lat": 47.27997949387221,
-    "lon": 11.399147041967954,
-    "url": "html/notice-5.html"
+    "lon": 11.399147041967954
   },
   "notice-6": {
     "location": "Spiel- & Liegewiese (Brunch)",
     "hint": "Dort, wo auch die Stämme warten, kannst du mit dem nächsten Tipp gleich durchstarten-",
     "lat": 47.28052099784376,
-    "lon": 11.399168013248396,
-    "url": "html/notice-6.html"
+    "lon": 11.399168013248396
   },
   "notice-7": {
     "location": "Holzhütte",
     "hint": "Dort, wo Schienen in den Schatten gehen, wirst du deinen nächsten Hinweis sehen.",
     "lat": 47.28183250162791,
-    "lon": 11.400261890402076,
-    "url": "html/notice-7.html"
+    "lon": 11.400261890402076
   }
 }
