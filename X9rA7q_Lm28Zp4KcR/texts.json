@@ -38,6 +38,12 @@
   "notice-7": {
     "location": "Holzhütte",
     "hint": "Dort, wo Schienen in den Schatten gehen, wirst du deinen nächsten Hinweis sehen.",
+    "lat": 47.28064954406762,
+    "lon": 11.399481214871951
+  },
+  "notice-8": {
+    "location": "Krezung Heinrich-Süß-Weg",
+    "hint": "Geht hinauf die langen Treppen, <b>ganz</b> oben wird euch der nächste Tipp schon retten.",
     "lat": 47.28183250162791,
     "lon": 11.400261890402076
   }
