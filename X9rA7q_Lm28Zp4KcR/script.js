@@ -7,14 +7,22 @@ const file = window.location.pathname.split("/").pop().replace(".html", "");
 
 document.getElementById("Button").addEventListener("click", async () => {
     const input = document.getElementById("Input").value;
+    const filename = window.location.pathname.split("/").pop();
+    console.log(filename);
     const correctPassword = "HB-44";
+    const s_correctPassword = "HB-44-e";
 
     if (input === correctPassword) {
         const message = await hint(file);
         print(message);
     } else {
-        document.body.innerHTML = "";
-        document.body.style.backgroundColor = "black";
+        if (input === s_correctPassword && filename === "notice-1.html") {
+            const message = "Suche im Schlafzimmer!"
+            print_e(message)
+        } else {
+            document.body.innerHTML = "";
+            document.body.style.backgroundColor = "black";
+        }
     }
 });
 
@@ -39,5 +47,12 @@ function print(message) {
     document.body.innerHTML = `
     <h1>${prettyName}</h1>
     <em>'${message.hint}'</em>
+    `;
+}
+
+function print_e(message) {
+    document.body.innerHTML = `
+    <h1>Ende</h1>
+    <p>message</p>
     `;
 }

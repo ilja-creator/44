@@ -58,5 +58,29 @@
     "hint": "Weiter geht's nun im schnellen Schritt, bis zum Umbrückleralmweg am Waldrand, dort gibt's den nächsten Tipp.",
     "lat": 47.28612688205788,
     "lon": 11.388717098040267
+  },
+  "notice-11": {
+    "location": "Umbrückleralmweg - Waldrand",
+    "hint": "Wo ist eingeschränkter Winterdienst, wirst mit dem nächsten Tipp begriaßt.",
+    "lat": 47.28796540177149,
+    "lon": 11.386721992481311
+  },
+  "notice-12": {
+    "location": "Kreuzung: Maria-Almweg - Umbrückleralmweg",
+    "hint": "Dort, wo links die Häuser stehen, machst a kurze Pause vorm Weitergehen.",
+    "lat": 47.28618775985356,
+    "lon": 11.388648100398509
+  },
+  "notice-13": {
+    "location": "Umbrückleralmweg - Abzweigung 27",
+    "hint": "Gleich ist's aus, die letzten Schritt, bringen dich nun zur Alm um die Brüggler' mit Tritt.",
+    "lat": 47.289059405859994,
+    "lon": 11.385462124421636
+  },
+  "notice-14": {
+    "location": "Umbrückleralm",
+    "hint": "'Falls du nun hier her gekommen bist, um dein Geschenk zu kriegen, muss ich dich enttäuschen, denn das ist zuhause. Weißt du noch den Weg zurück? Um es zu erreichen, musst du ein neues Kennwort am Schluss eingeben: HB-44-e",
+    "lat": 47.29256588262073,
+    "lon": 11.379245686162491
   }
 }
